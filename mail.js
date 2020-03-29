@@ -1,0 +1,5 @@
+function getMail() {
+  var address;
+
+  
+}
