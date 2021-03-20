@@ -1,9 +1,12 @@
+//TODO fix input recognition
 
-function rps(userInput) {
+function rps() {
+
+	var userInput = window.prompt("Enter: 0 is rock, 1 is paper, 2 is scissors");
 
 	var compChoice = Math.floor(Math.random() * 3);
-	//0 is rock, 1 is paper, 2 is scissors
-	var result, yourThrow;
+	var result;
+	var yourThrow;
 
 	if (compChoice === userInput) {
 		result = "Draw!";
@@ -25,17 +28,17 @@ function rps(userInput) {
 
 	switch (userInput) {
 		case 0:
-			yourThrow = "You picked rock. "
+			yourThrow = "You picked rock.";
 			break;
 
 		case 1:
-			yourThrow = "You picked paper. "
+			yourThrow = "You picked paper";
 			break;
 
 		case 2:
-			yourThrow = "You picked scissors. "
+			yourThrow = "You picked scissors.";
 			break;
 	}
 
-	window.alert(yourThrow + result);
+	window.alert(yourThrow + " " + result);
 }
